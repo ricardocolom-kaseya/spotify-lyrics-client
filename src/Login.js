@@ -1,5 +1,7 @@
 import { Box, Button, VStack, Text, Heading } from '@chakra-ui/react'
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useNavigate } from "react-router-dom";
+
 import { generateRandomString } from './common'
 
 const client_id = '14b9506bc8f84bf698641d4e7033e7fe'
@@ -20,6 +22,7 @@ function onLoginClick() {
 }
 
 export default function Login() {
+
     return (
         <Box w="100vw" h="100vh" bg="red">
             <VStack w="100%" h="100%" bg="gray.800" justify="center" align="center" spacing="8">
